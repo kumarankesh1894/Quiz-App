@@ -4,39 +4,9 @@
 
 This quiz application is built with React and provides an interactive way for users to test their knowledge across various categories. The app fetches questions from the Open Trivia Database API, presents them in a timed quiz format, and provides detailed results upon completion.
 
-
+##Project Link: https://knowledgechecker.netlify.app/
 ## File Structure
-quiz-app/
-├── public/
-│   └── (static assets)
-├── src/
-│   ├── components/
-│   │   ├── QuizSetup/
-│   │   │   ├── QuizSetup.jsx
-│   │   │   └── QuizSetup.css
-│   │   ├── QuestionPanel/
-│   │   │   ├── QuestionPanel.jsx
-│   │   │   └── QuestionPanel.css
-│   │   ├── ReportPage/
-│   │       ├── ReportPage.jsx
-│   │       └── ReportPage.css
-│   │
-│   ├── config/
-│   │   └── config.js
-│   │
-│   ├── App.jsx
-│   ├── App.css
-│   ├── main.jsx
-│   └── index.css
-│
-├── .gitignore
-├── .env.example
-├── package.json
-├── package-lock.json
-├── README.md
-├── eslint.config.js
-└── vite.config.js
-
+<pre><code> 📁 quiz-app/ ├── 📁 public/ # Static assets (images, icons, etc.) │ ├── 📁 src/ # Source code │ ├── 📁 components/ # Reusable UI components │ │ ├── 📁 QuizSetup/ # Quiz setup UI │ │ │ ├── QuizSetup.jsx │ │ │ └── QuizSetup.css │ │ ├── 📁 QuestionPanel/ # Component for rendering quiz questions │ │ │ ├── QuestionPanel.jsx │ │ │ └── QuestionPanel.css │ │ ├── 📁 ReportPage/ # Component for showing quiz results │ │ ├── ReportPage.jsx │ │ └── ReportPage.css │ │ │ ├── 📁 config/ # App configuration (e.g., constants, settings) │ │ └── config.js │ │ │ ├── App.jsx # Main application component │ ├── App.css # Global styles for App │ ├── main.jsx # Entry point for React │ └── index.css # Global base styles │ ├── .gitignore # Git ignored files ├── .env.example # Sample environment variables ├── package.json # Project dependencies and scripts ├── package-lock.json # Exact version locks for dependencies ├── README.md # Project documentation ├── eslint.config.js # ESLint configuration └── vite.config.js # Vite bundler configuration </code></pre>
 
 ### Key Features:
 - Email validation and user identification
