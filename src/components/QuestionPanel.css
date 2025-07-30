@@ -1,0 +1,164 @@
+/* Question Panel Styles */
+.question-panel {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  width: 240px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.panel-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #333;
+  text-align: center;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.25rem;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.panel-question-btn {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #666;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-align: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.panel-question-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Current question - highlighted */
+.panel-question-btn.current {
+  background-color: #2196f3;
+  border-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+/* Attempted questions - green */
+.panel-question-btn.attempted {
+  background-color: #4caf50;
+  border-color: #45a049;
+  color: white;
+}
+
+/* Visited but not attempted - yellow */
+.panel-question-btn.visited {
+  background-color: #ffc107;
+  border-color: #e0a800;
+  color: #212529;
+}
+
+/* Panel Legend */
+.panel-legend {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.legend-color.current {
+  background-color: #2196f3;
+  border-color: #1976d2;
+}
+
+.legend-color.attempted {
+  background-color: #4caf50;
+  border-color: #45a049;
+}
+
+.legend-color.visited {
+  background-color: #ffc107;
+  border-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .question-panel {
+    max-width: 100%;
+  }
+  
+  .panel-grid {
+    gap: 0.5rem;
+  }
+  
+  .panel-question-btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .panel-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.4rem;
+  }
+  
+  .panel-question-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .question-panel {
+    padding: 1rem;
+  }
+  
+  .panel-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.3rem;
+    justify-items: center;
+  }
+  
+  .panel-question-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+  }
+}
