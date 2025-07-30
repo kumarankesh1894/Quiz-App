@@ -6,7 +6,33 @@ This quiz application is built with React and provides an interactive way for us
 
 ##Project Link: https://knowledgechecker.netlify.app/
 ## File Structure
-<pre><code>📁 quiz-app/ ├── 📁 public/ # Static assets (images, icons, etc.) ├── 📁 src/ # Source code │ ├── 📁 components/ # Reusable UI components │ │ ├── 📁 QuizSetup/ │ │ │ ├── QuizSetup.jsx │ │ │ └── QuizSetup.css │ │ ├── 📁 QuestionPanel/ │ │ │ ├── QuestionPanel.jsx │ │ │ └── QuestionPanel.css │ │ ├── 📁 ReportPage/ │ │ ├── ReportPage.jsx │ │ └── ReportPage.css │ ├── 📁 config/ │ │ └── config.js │ ├── App.jsx │ ├── App.css │ ├── main.jsx │ └── index.css ├── .gitignore ├── .env.example ├── package.json ├── package-lock.json ├── README.md ├── eslint.config.js └── vite.config.js </code></pre>
+quiz-app/
+├── public/
+│   └── (static assets)
+├── src/
+│   ├── components/
+│   │   ├── QuizSetup/
+│   │   │   ├── QuizSetup.jsx
+│   │   │   └── QuizSetup.css
+│   │   ├── QuestionPanel/
+│   │   │   ├── QuestionPanel.jsx
+│   │   │   └── QuestionPanel.css
+│   │   ├── ReportPage/
+│   │       ├── ReportPage.jsx
+│   │       └── ReportPage.css
+│   ├── config/
+│   │   └── config.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── .env.example
+├── package.json
+├── package-lock.json
+├── README.md
+├── eslint.config.js
+└── vite.config.js
 
 ### Key Features:
 - Email validation and user identification
