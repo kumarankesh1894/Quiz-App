@@ -6,33 +6,7 @@ This quiz application is built with React and provides an interactive way for us
 
 ##Project Link: https://knowledgechecker.netlify.app/
 ## File Structure
-quiz-app/
-├── public/
-│   └── (static assets)
-├── src/
-│   ├── components/
-│   │   ├── QuizSetup/
-│   │   │   ├── QuizSetup.jsx
-│   │   │   └── QuizSetup.css
-│   │   ├── QuestionPanel/
-│   │   │   ├── QuestionPanel.jsx
-│   │   │   └── QuestionPanel.css
-│   │   ├── ReportPage/
-│   │       ├── ReportPage.jsx
-│   │       └── ReportPage.css
-│   ├── config/
-│   │   └── config.js
-│   ├── App.jsx
-│   ├── App.css
-│   ├── main.jsx
-│   └── index.css
-├── .gitignore
-├── .env.example
-├── package.json
-├── package-lock.json
-├── README.md
-├── eslint.config.js
-└── vite.config.js
+<img width="441" height="652" alt="image" src="https://github.com/user-attachments/assets/3c6c283a-d733-45e0-b57c-8663c9cd791a" />
 
 ### Key Features:
 - Email validation and user identification
