@@ -4,6 +4,40 @@
 
 This quiz application is built with React and provides an interactive way for users to test their knowledge across various categories. The app fetches questions from the Open Trivia Database API, presents them in a timed quiz format, and provides detailed results upon completion.
 
+
+## File Structure
+quiz-app/
+├── public/
+│   └── (static assets)
+├── src/
+│   ├── components/
+│   │   ├── QuizSetup/
+│   │   │   ├── QuizSetup.jsx
+│   │   │   └── QuizSetup.css
+│   │   ├── QuestionPanel/
+│   │   │   ├── QuestionPanel.jsx
+│   │   │   └── QuestionPanel.css
+│   │   ├── ReportPage/
+│   │       ├── ReportPage.jsx
+│   │       └── ReportPage.css
+│   │
+│   ├── config/
+│   │   └── config.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── .env.example
+├── package.json
+├── package-lock.json
+├── README.md
+├── eslint.config.js
+└── vite.config.js
+
+
 ### Key Features:
 - Email validation and user identification
 - 15-question quiz with 30-minute timer
@@ -27,7 +61,7 @@ This quiz application is built with React and provides an interactive way for us
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone [https://github.com/kumarankesh1894/Quiz-App]
    ```
 2. Navigate to the project directory:
    ```bash
@@ -60,24 +94,17 @@ Initially encountered network errors 4-5 times during API integration. Resolved 
 - Validating API responses before processing
 - Adding loading states for better UX
 
-### 2. Prop Drilling
-Initially passed parameters directly through components, which became messy. Solved by:
-- Restructuring component hierarchy
-- Centralizing state management in the App component
-- Using context API for shared state where appropriate
-
-### 3. Auto-Submit Logic
+### 2. Auto-Submit Logic
 Implementing the auto-submit when time expires required careful handling of:
 - Timer state management
 - Cleanup of interval effects
 - Synchronization with quiz completion state
 
-### 4. Timer and useEffect Issues
+### 3. Timer and useEffect Issues
 Faced challenges with timer accuracy and effect dependencies. Resolved by:
 - Properly cleaning up intervals in useEffect
 - Using functional updates for timeLeft state
 - Consulting documentation and online resources to understand best practices
-- Implementing a more robust timer system with pause/resume capability
 
 ## Bonus Features Implemented
 
@@ -88,13 +115,6 @@ Faced challenges with timer accuracy and effect dependencies. Resolved by:
 - **Error Handling**: Graceful degradation when API fails
 - **Accessibility**: Keyboard navigation and focus states
 - **Animations**: Loading indicators and interactive feedback
-
-### Additional Improvements
-- Question shuffling to prevent pattern recognition
-- HTML entity decoding for proper question display
-- Visual indicators for question status
-- Comprehensive answer review system
-- Clean, modern UI with consistent styling
 
 ## Future Enhancements
 
